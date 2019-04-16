@@ -123,7 +123,7 @@ html {
 }
 
 .big-image {
-  width: 100%;
+  width: 90%;
   border: 10px solid black;
 }
 
@@ -133,6 +133,32 @@ html {
   margin-bottom: 10px;
   background: rgb(238, 105, 81);
   color: black;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   border: 2px solid black;
+  outline: 0;
+  margin-left: 50px;
+}
+
+.back:hover {
+  background: rgb(196, 85, 65);
+}
+
+.image-view {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 40px;
+  height: 60px;
+  font-size: 35px;
+  border:none;
+  outline: 0;
+  margin-top: 300px;
+}
+
+.arrow:hover {
+  background: rgba(196, 85, 65, .5);
 }

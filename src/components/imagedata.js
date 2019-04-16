@@ -29,3 +29,13 @@ export function getPicture(id) {
     })
   })
 }
+
+export function getPrevNext(id) {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:3001/images?albumId=' + id).then (resp =>{
+      resolve(resp.data)
+    }).catch(err => {
+      reject(err)
+    })
+  })
+}

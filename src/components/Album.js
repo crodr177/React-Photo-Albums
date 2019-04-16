@@ -41,7 +41,7 @@ class AlbumContainer extends Component {
           <div className="subtitles">
             {
               this.state.albums.map(album => (
-                <Link className="back-albums" to={"/album/"+album.id}><p>{"Album " + album.id}</p></Link>
+                <Link className="back-albums" to={"/album/"+album.id}><p>{album.name}</p></Link>
               ))
             }
           </div>
